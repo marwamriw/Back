@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const passport = require("passport");
 
-const CLIENT_URL = "http://localhost:3000/";
+const CLIENT_URL = "https://pet-care-nmmy.onrender.com";
 
         //sign up and sign in endpoint in with social media:google ,github
 router.get("/login/success",(req, res) => {
