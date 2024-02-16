@@ -5,7 +5,7 @@ const dotenv = require("dotenv")
 dotenv.config()
 
 
-require("./passport")
+
 const cors = require("cors")
 
 //json config
@@ -19,7 +19,7 @@ const connectDB = require("./config/connectDB")
 connectDB()
 //routes
 app.use("/api", require('./routes/userRoutes'))
-app.use("/auth", require("./routes/auth"));
+
 app.use("/api/blog", require("./routes/blogRoutes"))
 
 //port config
